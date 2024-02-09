@@ -62,7 +62,7 @@ function processReaderBuffer(pReaderBuffer) {
                                     <div class="readerstatscell">${pReaderBuffer.started ? 'Encendido' : 'Apagado'}</div>
                                     <div class="semaforo" style="background-color: ${pReaderBuffer.started ? 'green' : 'red'};"></div>
                                 </div>
-                                <div class="readercountcell" id="countdiv">Tag Count: <strong>${nTagCount}</strong></div>
+                                <div class="readercountcell" id="countdiv"># Etiquetas: <strong>${nTagCount}</strong></div>
                             </div>`;
 
     // First flag as invalid.
@@ -117,8 +117,8 @@ function setRowToView(pRow, pDivRow, sReaderDomId) {
             document.getElementById(sRowId + 'rn').innerText = pRow.ReaderName;
         /* if (document.getElementById(sRowId+'rssi'))
             document.getElementById(sRowId+'rssi').innerText = pRow.PeakRSSI; */
-        if (document.getElementById(sRowId + 'startevent'))
-            document.getElementById(sRowId + 'startevent').innerText = pRow.Pedido;
+        if (document.getElementById(sRowId + 'pedido'))
+            document.getElementById(sRowId + 'pedido').innerText = pRow.Pedido;
     }
     else {
         pDivRow.empty();
@@ -128,7 +128,7 @@ function setRowToView(pRow, pDivRow, sReaderDomId) {
         /* var td3="<div class=\"datacell\" id=\""+sRowId+"ant\">"+pRow["Antenna"]+"</div>"; */
         var td4 = "<div class=\"datacell\" id=\"" + sRowId + "rn\">" + pRow["ReaderName"] + "</div>";
         /* var td5="<div class=\"datacell\" id=\""+sRowId+"rssi\">"+pRow["PeakRSSI"]+"</div>"; */
-        var td6 = "<div class=\"datacell\" id=\"" + sRowId + "startevent\">" + pRow["Pedido"] + "</div>";
+        var td6 = "<div class=\"datacell\" id=\"" + sRowId + "pedido\">" + pRow["Pedido"] + "</div>";
 
         pDivRow.append(td1 + td2 /* + td3 */ + td4 /* + td5 */ + td6);
     }
@@ -308,7 +308,7 @@ function cleargrid() {
         }
     }
 
-    document.getElementById('countdiv').innerHTML = 'Tag Count: <strong>0</strong>';
+    document.getElementById('countdiv').innerHTML = '# Etiquetas: <strong>0</strong>';
 
     if (bRestartTimer == true)
         startBufferTimer();
