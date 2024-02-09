@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <profile name="Profile 1" defaultsyncprofile="False" realtimeprofile="False" livemode_v9x1="True" profile_id="1">
   <processes>
-    <process name="Process 1" enabled="True" lastsyncstatus="Never synchronized">
+    <process name="Process 1" enabled="True" lastsyncstatus="9/02/2024 8:58:38 a. m.:  Sync completed.">
       <comment />
       <options updatetype="Append" overwritewithzerorecords="False" deleteaftertransfer="False" />
       <datasets>
@@ -39,6 +39,10 @@
         <mapping index="3">
           <source columnname="Pedido" columnordinal="10" />
           <destination columnname="Pedido" columnordinal="3" destfieldaction="0" />
+        </mapping>
+        <mapping index="4">
+          <source columnname="TagEvent" columnordinal="9" />
+          <destination columnname="Puerta" columnordinal="6" destfieldaction="0" />
         </mapping>
       </fieldmappings>
       <filterfields filtertype="AND" />

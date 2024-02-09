@@ -10005,17 +10005,45 @@
   <readers>
     <reader top="331" left="264" width="32" height="32" id="1">
       <antennas>
-        <antenna top="299" left="226" width="32" height="32">
-          <bullseye top="291" left="104" width="16" height="16" />
+        <antenna top="256" left="226" width="32" height="32">
+          <bullseye top="248" left="104" width="16" height="16" />
         </antenna>
-        <antenna top="189" left="63" width="32" height="32">
-          <bullseye top="206" left="197" width="16" height="16" />
+        <antenna top="146" left="63" width="32" height="32">
+          <bullseye top="163" left="197" width="16" height="16" />
         </antenna>
       </antennas>
       <gpodevices />
     </reader>
   </readers>
-  <tagcontainers />
+  <tagcontainers>
+    <tagcontainer top="417" left="99" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+      <tags>
+        <tag>
+          <epc>e0fb521e-2dfd-458d-9f93-538a6fb4fa19</epc>
+          <tid />
+          <user />
+        </tag>
+      </tags>
+    </tagcontainer>
+    <tagcontainer top="398" left="182" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+      <tags>
+        <tag>
+          <epc>86e2c64a-e34f-45eb-979a-2891306b19c6</epc>
+          <tid />
+          <user />
+        </tag>
+      </tags>
+    </tagcontainer>
+    <tagcontainer top="35" left="129" width="48" height="48" type="Box" tagtype="Label" material="Cardboard">
+      <tags>
+        <tag>
+          <epc>6f7b7ed3-243d-4e1a-beb5-8f8e7ac19b3d</epc>
+          <tid />
+          <user />
+        </tag>
+      </tags>
+    </tagcontainer>
+  </tagcontainers>
   <labels />
   <animation />
 </environment>
